@@ -36,7 +36,7 @@ inner join orders as o
 group by o.created_at::date
 order by o.created_at::date desc
 
--- №3. Нарастающий итог выручки
+-- Нарастающий итог выручки
 WITH daily_sales(day, day_revenue) AS (
     VALUES
         (DATE '2026-10-01', 1000),
